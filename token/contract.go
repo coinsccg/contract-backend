@@ -41,7 +41,7 @@ func Keystore(privateKey string) (*ecdsa.PrivateKey, accounts.Account, string) {
 	//key := string(content)
 
 	// 从密钥导入账号
-	//privateKey := "3a719095eb6e07ba8fdf3ae21f6550c1ff13855c53b12aad6d0cf105931d997b"
+	//privateKey := ""
 	pk, _ := crypto.HexToECDSA(privateKey)
 	account, _ := ks.ImportECDSA(pk, "123") // 密码可以随意设置 只有第一次加载密钥才有URL.PATH
 	content, _ := ioutil.ReadFile(account.URL.Path)
