@@ -1,0 +1,13 @@
+port="8080"
+dev = true
+private_key = ""
+
+[database]
+db_host="api.bydk.net"
+#db_host="localhost"
+db_port="3306"
+db_schema_name="auction"
+db_username="root"
+db_pwd="l;fzyajG6e4h"
+#db_pwd="password"
+db_args="charset=utf8mb4&parseTime=True&loc=Local"
